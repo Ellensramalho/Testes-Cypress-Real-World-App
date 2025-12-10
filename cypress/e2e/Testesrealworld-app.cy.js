@@ -65,4 +65,14 @@ describe('Fluxo completo de cadastro, login e onboarding', () => {
   });
 });
 
-it.only()
+  it.only('Fazer transação', () => {
+    cy.visit('localhost:3000')
+    cy.get('#username').type('Tavares_Barrows');
+    cy.get('#password').type('s3cret');
+    cy.get('input[type="checkbox"]').check();  
+    cy.get('button[type="submit"]').click();
+    cy.get('[data-test="nav-top-new-transaction"]').click()
+    cy.contais('span', 'Santos.Runte65@gmail.com').click({force: true})
+
+
+  })
