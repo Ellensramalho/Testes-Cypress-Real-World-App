@@ -1,42 +1,66 @@
 describe('Fluxo completo de cadastro, login e onboarding', () => {
-
-  beforeEach(() => {
-    cy.visit('http://localhost:3000/signin')
-  })
-
-  it('Cadastro + Login + Onboarding', () => {
+  const uniqueUsername = `Tavares_${Cypress._.random(0, 10000)}`;
+  const password = 's3cret';
   
-    cy.contains('Sign Up').click()
-    cy.get('#firstName').type('Tavares')
-    cy.get('#lastName').type('Barrows')
-    cy.get('#username').type('Tavares_Barrows')
-    cy.get('#password').type('s3cret')
-    cy.get('#confirmPassword').type('s3cret')
-    cy.get('button[type="submit"]').click()
+  beforeEach(() => {
+    cy.visit('http://localhost:3000/signin');
+  });
 
-    cy.get('#username').type('Tavares_Barrows')
-    cy.get('#password').type('s3cret')
-    cy.get('input[type="checkbox"]').check()
-    cy.get('button[type="submit"]').click()
-
-     cy.get('body').then(($body) => {
-      if ($body.find('[data-test="user-onboarding-next"]').length > 0) {
-        cy.get('[data-test="user-onboarding-next"]').click()
-      }
-    })
-
-    cy.get('body').then(($body) => {
-      if ($body.find('#bankaccount-bankName-input').length > 0) {
+  it('Cadastro + Login + Onboarding Completo', () => {
+  
+    cy.log('1. Iniciando o cadastro de um novo usuário');
+    cy.contains('Sign Up').click();
+    
+  
+    cy.get('#firstName').type('Tavares');
+    cy.get('#lastName').type('Barrows');
+    cy.get('#username').type(uniqueUsername); 
+    cy.get('#password').type(password);
+    cy.get('#confirmPassword').type(password);
+    
+    
+    cy.get('button[type="submit"]').click();
 
     
-    cy.get('#bankaccount-bankName-input').type('TesterBank')
-    cy.get('#bankaccount-routingNumber-input').type('123456789')
-    cy.get('#bankaccount-accountNumber-input').type('123456789')
-    cy.get('button[type=submit]').click()
+    cy.log('2. Realizando o Login');
+    cy.get('#username', { timeout: 10000 }).should('be.visible'); 
+    
 
-    cy.get('[data-test="user-onboarding-next"]').click()
+    cy.get('#username').type(uniqueUsername);
+    cy.get('#password').type(password);
+    
+    cy.get('input[type="checkbox"]').check(); 
+    
+    cy.get('button[type="submit"]').click();
+    
+  
+    cy.log('3. Onboarding: Etapa de saudação');
+    
+    
+    cy.get('[data-test="user-onboarding-next"]', { timeout: 10000 })
+      .should('be.visible') 
+      .click();
 
-  }
-})
-})
-})
+
+    cy.log('4. Onboarding: Cadastro da conta bancária');
+    
+
+    cy.get('#bankaccount-bankName-input', { timeout: 10000 })
+      .should('be.visible');
+      
+    cy.get('#bankaccount-bankName-input').type('TesterBank');
+    cy.get('#bankaccount-routingNumber-input').type('123456789');
+    cy.get('#bankaccount-accountNumber-input').type('123456789');
+    
+    cy.get('button[type=submit]').click();
+
+
+    cy.log('5. Onboarding: Conclusão');
+    
+    cy.get('[data-test="user-onboarding-next"]', { timeout: 10000 })
+      .should('be.visible')
+      .click();
+      
+
+  });
+});
