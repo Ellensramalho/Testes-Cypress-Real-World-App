@@ -5,50 +5,50 @@ Este repositório registra meus testes realizados na aplicação RealWorld, um a
 
 🚀 Tecnologias Utilizadas
 
-Cypress – framework de testes end-to-end.
+- Cypress – framework de testes end-to-end.
 
-React – aplicação testada.
+- React – aplicação testada.
 
-Node.js / Terminal – instalação e execução do app em ambiente local. <br><br>
+- Node.js / Terminal – instalação e execução do app em ambiente local. 
 
 
 🧪 Funcionalidades Testadas
 
-Testei todas as funções do aplicativo. <br><br>
+Testei todas as funções do aplicativo. 
 
 
 🔐 Autenticação
 
-Cadastro de usuário.
+- Cadastro de usuário.
 
-Login.
+- Login.
 
-Logout.<br><br>
+- Logout.
 
 
 👤 Gestão de Conta
 
-Atualização de dados da conta.
+- Atualização de dados da conta.
 
-Criação de conta bancária.
+- Criação de conta bancária.
 
-Edição de informações.
+- Edição de informações.
 
-Exclusão de contas. <br><br>
+- Exclusão de contas. 
 
 
 💳 Operações Bancárias
 
-Realização de transações. <br><br>
+- Realização de transações.
 
 
 🔍 Usabilidade e Fluxo
 
-Filtros e busca.
+- Filtros e busca.
 
-Navegação entre telas.
+- Navegação entre telas.
 
-Notificações. <br><br>
+- Notificações. 
 
 
 ⚙️ Execução da Aplicação e dos Testes
