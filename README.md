@@ -54,17 +54,19 @@ Testei todas as funções do aplicativo. <br><br>
 ⚙️ Execução da Aplicação e dos Testes
 
 1. Instalação da aplicação
+   
 *npm install*
 *npm start*
 
 2. Instalação do Cypress
+
 *npm install cypress --save-dev*
 
 3. Executar o Cypress
+   
 *npx cypress open*
 
-
-modo headless:
+Modo headless:
 
 *npx cypress run*
 
