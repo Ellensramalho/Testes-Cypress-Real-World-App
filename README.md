@@ -1,6 +1,6 @@
 📱 RealWorld App – Testes com Cypress
 
-Este repositório registra meus testes realizados na aplicação RealWorld, um aplicativo desenvolvido em React rodando em localhost, no qual utilizei o Cypress para testar todas as funcionalidades essenciais da aplicação em geral.
+Este repositório registra meus testes realizados na aplicação RealWorld, um aplicativo desenvolvido em React rodando em localhost, no qual utilizei o Cypress para testar todas as funcionalidades essenciais da aplicação em geral. <br><br>
 
 
 🚀 Tecnologias Utilizadas
@@ -14,10 +14,10 @@ Node.js / Terminal – instalação e execução do app em ambiente local. <br><
 
 🧪 Funcionalidades Testadas
 
-Testei todas as funções do aplicativo.<br><br>
+Testei todas as funções do aplicativo. <br><br>
 
 
-###🔐 Autenticação
+🔐 Autenticação
 
 Cadastro de usuário.
 
@@ -34,12 +34,12 @@ Criação de conta bancária.
 
 Edição de informações.
 
-Exclusão de contas.<br><br>
+Exclusão de contas. <br><br>
 
 
 💳 Operações Bancárias
 
-Realização de transações.<br><br>
+Realização de transações. <br><br>
 
 
 🔍 Usabilidade e Fluxo
@@ -48,7 +48,7 @@ Filtros e busca.
 
 Navegação entre telas.
 
-Notificações.<br><br>
+Notificações. <br><br>
 
 
 ⚙️ Execução da Aplicação e dos Testes
@@ -65,7 +65,7 @@ npx cypress open
 
 Ou em modo headless:
 
-npx cypress run<br><br>
+npx cypress run
 
 ###📋 Objetivo do Repositório
 
