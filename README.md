@@ -1,6 +1,6 @@
 📱 RealWorld App – Testes com Cypress
 
-Este repositório registra meus testes realizados na aplicação RealWorld, um aplicativo desenvolvido em React rodando em localhost, no qual utilizei o Cypress para testar todas as funcionalidades essenciais da aplicação em geral. <br><br><br><br><br><br><br><br><br><br>
+Este repositório registra meus testes realizados na aplicação RealWorld, um aplicativo desenvolvido em React rodando em localhost, no qual utilizei o Cypress para testar todas as funcionalidades essenciais da aplicação em geral. <br><br>
 
 
 🚀 Tecnologias Utilizadas
