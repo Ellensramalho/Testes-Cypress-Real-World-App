@@ -9,12 +9,12 @@ Este repositório registra meus testes realizados na aplicação RealWorld, um a
 
 - React – aplicação testada.
 
-- Node.js / Terminal – instalação e execução do app em ambiente local. 
+- Node.js / Terminal – instalação e execução do app em ambiente local.  <br><br>
 
 
 🧪 Funcionalidades Testadas
 
-Testei todas as funções do aplicativo. 
+Testei todas as funções do aplicativo. <br><br>
 
 
 🔐 Autenticação
@@ -23,7 +23,7 @@ Testei todas as funções do aplicativo.
 
 - Login.
 
-- Logout.
+- Logout. <br><br>
 
 
 👤 Gestão de Conta
@@ -34,12 +34,12 @@ Testei todas as funções do aplicativo.
 
 - Edição de informações.
 
-- Exclusão de contas. 
+- Exclusão de contas. <br><br>
 
 
 💳 Operações Bancárias
 
-- Realização de transações.
+- Realização de transações. <br><br>
 
 
 🔍 Usabilidade e Fluxo
@@ -48,24 +48,25 @@ Testei todas as funções do aplicativo.
 
 - Navegação entre telas.
 
-- Notificações. 
+- Notificações. <br><br>
 
 
 ⚙️ Execução da Aplicação e dos Testes
+
 1. Instalação da aplicação
-npm install
-npm start
+*npm install*
+*npm start*
 
 2. Instalação do Cypress
-npm install cypress --save-dev
+*npm install cypress --save-dev*
 
 3. Executar o Cypress
-npx cypress open
+*npx cypress open*
 
 
-Ou em modo headless:
+modo headless:
 
-npx cypress run
+*npx cypress run*
 
 📋 Objetivo do Repositório
 
