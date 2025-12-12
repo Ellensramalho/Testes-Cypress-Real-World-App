@@ -44,7 +44,7 @@ Testei todas as funções do aplicativo. <br><br>
 
 🔍 Usabilidade e Fluxo
 
-- Filtros e busca.
+- Filtros.
 
 - Navegação entre telas.
 
